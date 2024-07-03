@@ -19,7 +19,7 @@ header {
     & ul {
         & li {
             & a {
-                
+
                 font-family: "Roboto", serif;
             }
         }
@@ -42,39 +42,44 @@ section {
     }
 
     & img {
-        width: 90%;
+        width: 70%;
 
 
     }
 
-  
+
 }
 
 /* Estilização dos Estilosde luta*/
 .icon {
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    
 
-    & .img-icon {
+
+    & .container-icon {
         width: 100%;
-        align-items: center;
         display: flex;
-        flex-direction: column;
-        justify-content: baseline;
 
+        & .img-icon {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+           align-items: center;
+           
+            
+             & img{
+                width: 50%;
+                border-radius: 50px;
+                height: 150px;
+                background-color: rgb(8, 231, 75);
+               
+             }
+            & h2 {
+                margin-top: 55px;
+                font-size: 20px;
 
-
-        & img {
-
-            width: 50%;
-            background-color: rgb(243, 19, 19);
-            border-radius: 100px;
-
-
+            }
         }
-
     }
 
 
@@ -101,12 +106,12 @@ article {
 
         width: 100%;
         display: flex;
-        align-items: center; 
+        align-items: center;
         justify-content: center;
 
         & iframe {
-           margin: 0 0 0 15%;
-           
+            margin: 0 0 0 15%;
+
         }
     }
 
