@@ -29,10 +29,31 @@ header {
             & a {
 
                 font-family: "Roboto", serif;
+                margin-top: 10px;
             }
         }
     }
 
+}
+
+section  {
+
+        & .list-img {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            background-color: #dd7905;
+            
+           
+            
+            & img {
+                display: flex;
+                width: 50%;
+                height: 10%;
+  
+            }
+        }
+    
 }
 
 section {
@@ -60,13 +81,11 @@ section {
 
 }
 
+
+
 /* Estilização dos Estilosde luta*/
 .icon {
     width: 100%;
-  
-    
-
-
     & .container-icon {
         width: 100%;
         display: flex;
