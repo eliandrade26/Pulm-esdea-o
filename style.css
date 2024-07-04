@@ -7,6 +7,7 @@
     font-family: "Inknut Antiqua", serif;
     font-weight: 400;
     font-style: normal;
+    
 
 }
 
@@ -15,8 +16,15 @@
 header {
     margin-right: 1%;
     margin-top: 1%;
-
+    
     & ul {
+        
+        & img{
+            display: flex;
+            width: 10%;
+            justify-content: flex-start;
+   
+        }
         & li {
             & a {
 
@@ -28,19 +36,21 @@ header {
 }
 
 section {
-    margin-top: 4%;
+    margin-top: 1%;
     display: flex;
     flex-direction: column;
     width: 100%;
     align-items: center;
     justify-content: center;
-    margin-bottom: 20%;
+    margin-bottom: 10%;
 
     & h1 {
         display: flex;
         text-align: center;
+        margin-bottom: 5%;
+        
     }
-
+ 
     & img {
         width: 70%;
 
@@ -53,6 +63,7 @@ section {
 /* Estilização dos Estilosde luta*/
 .icon {
     width: 100%;
+  
     
 
 
@@ -69,14 +80,24 @@ section {
             
              & img{
                 width: 50%;
-                border-radius: 50px;
                 height: 150px;
-                background-color: rgb(8, 231, 75);
-               
+                background-color: #FA8909;
+                transition: all .4s;
+                border: 10px solid transparent;
+                border-radius: 50%;
+                }
+                & img:hover{
+                    border: 10px solid #dd7905;
+                    
+                    -webkit-transform: scale(1.5);
+                    transform: scale(1.5);
+                    
+                   
              }
             & h2 {
                 margin-top: 55px;
                 font-size: 20px;
+                
 
             }
         }
