@@ -7,24 +7,23 @@
     font-family: "Inknut Antiqua", serif;
     font-weight: 400;
     font-style: normal;
-    
 
 }
-
-
 
 header {
     margin-right: 1%;
     margin-top: 1%;
-    
+    width: 100%;
+
     & ul {
-        
-        & img{
+
+        & img {
             display: flex;
             width: 10%;
             justify-content: flex-start;
-   
+
         }
+
         & li {
             & a {
 
@@ -36,56 +35,70 @@ header {
 
 }
 
-section  {
 
-        & .list-img {
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            background-color: #dd7905;
-            
-           
-            
-            & img {
-                display: flex;
-                width: 50%;
-                height: 10%;
-  
-            }
-        }
-    
-}
-
-section {
-    margin-top: 1%;
-    display: flex;
-    flex-direction: column;
+section.slider {
+    margin: 0 auto;
     width: 100%;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 10%;
+    height: auto;
+    padding: 0 !important;
+    overflow: hidden;
 
     & h1 {
         display: flex;
         text-align: center;
-        margin-bottom: 5%;
-        
+        margin-bottom: 0%;
+        justify-content: center;
     }
- 
+
+    & .slider-content {
+        width: 400%;
+        height: auto;
+        display: flex;
+
+        & input {
+            display: none;
+        }
+
+        & .slider-box {
+            width: 25%;
+            height: auto;
+            position: relative;
+
+        }
+
+        & .nav-manual, .nav-auto div {
+            position: absolute;
+            width: 100%;
+            margin-top: 44%;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            
+
+            & .manual-btn, .nav-auto  {
+                border: 1px solid #FA8909;
+                cursor: pointer;
+                padding: 10px;
+                border-radius: 50%;
+                transition: 0.2s;
+
+                &:hover{
+                    background-color: #FA8909;
+                }
+            }
+        }
+    }
+
     & img {
-        width: 70%;
-
-
+        width: 100%;
+        height: 50%;
     }
-
-
 }
-
-
 
 /* Estilização dos Estilosde luta*/
 .icon {
     width: 100%;
+
     & .container-icon {
         width: 100%;
         display: flex;
@@ -94,38 +107,34 @@ section {
             display: flex;
             flex-direction: column;
             width: 100%;
-           align-items: center;
-           
-            
-             & img{
+            align-items: center;
+
+
+            & img {
                 width: 50%;
                 height: 150px;
                 background-color: #FA8909;
                 transition: all .4s;
                 border: 10px solid transparent;
                 border-radius: 50%;
-                }
-                & img:hover{
-                    border: 10px solid #dd7905;
-                    
-                    -webkit-transform: scale(1.5);
-                    transform: scale(1.5);
-                    
-                   
-             }
+            }
+
+            & img:hover {
+                border: 10px solid #111111;
+
+                -webkit-transform: scale(1.5);
+                transform: scale(1.5);
+
+            }
+
             & h2 {
                 margin-top: 55px;
                 font-size: 20px;
-                
 
             }
         }
     }
-
-
 }
-
-
 
 h1 {
     margin-bottom: 2%;
@@ -163,4 +172,8 @@ article {
         width: 50%;
 
     }
+}
+
+#radio1:checked~ .nav-auto .auto-btn1, #radio2:checked~ .nav-auto .auto-btn2, #radio3:checked~ .nav-auto .auto-btn3{
+    background-color: #FA8909;
 }
