@@ -21,7 +21,6 @@ header {
             display: flex;
             width: 10%;
             justify-content: flex-start;
-
         }
 
         & li {
@@ -32,14 +31,12 @@ header {
             }
         }
     }
-
 }
-
 
 section.slider {
     margin: 0 auto;
     width: 100%;
-    height: auto;
+    height: 10%;
     padding: 0 !important;
     overflow: hidden;
 
@@ -48,6 +45,19 @@ section.slider {
         text-align: center;
         margin-bottom: 0%;
         justify-content: center;
+    }
+
+    & .slider-box  {
+        width: 25%;
+        height: auto;
+        position: relative;
+        text-align: center;
+        transition: 1s;
+
+        & img {
+            width: 100%;
+            height: 50%;
+        }
     }
 
     & .slider-content {
@@ -59,85 +69,80 @@ section.slider {
             display: none;
         }
 
-        & .slider-box {
-            width: 25%;
-            height: auto;
-            position: relative;
-
-        }
-
-        & .nav-manual, .nav-auto div {
+        & .nav-manual, .nav-auto {
             position: absolute;
             width: 100%;
             margin-top: 44%;
             display: flex;
             justify-content: center;
             gap: 10px;
-            
+        }
 
-            & .manual-btn, .nav-auto  {
-                border: 1px solid #FA8909;
-                cursor: pointer;
-                padding: 10px;
-                border-radius: 50%;
-                transition: 0.2s;
+        & .nav-manual .manual-btn, .nav-auto div {
+            border: 1px solid #FA8909;
+            cursor: pointer;
+            padding: 10px;
+            border-radius: 50%;
+            transition: 0.2s;
 
-                &:hover{
+            &:hover {
+                background-color: #FA8909;
+            }
+        }
+    }
+}
+
+
+/* Estilização dos Estilosde luta*/
+section.content {
+
+    & .icon {
+        width: 100%;
+
+        & .container-icon {
+            width: 100%;
+            display: flex;
+
+            & .img-icon {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                align-items: center;
+
+                & img {
+                    width: 50%;
+                    height: 150px;
                     background-color: #FA8909;
+                    transition: all .4s;
+                    border: 10px solid transparent;
+                    border-radius: 50%;
+                }
+
+                & img:hover {
+                    border: 10px solid #111111;
+
+                    -webkit-transform: scale(1.5);
+                    transform: scale(1.5);
+                }
+
+                & h2 {
+                    margin-top: 40px;
+                    font-size: 20px;
                 }
             }
         }
     }
 
-    & img {
-        width: 100%;
-        height: 50%;
+    h1 {
+        margin-bottom: 2%;
+        text-align: center;
     }
 }
 
-/* Estilização dos Estilosde luta*/
-.icon {
-    width: 100%;
-
-    & .container-icon {
-        width: 100%;
-        display: flex;
-
-        & .img-icon {
-            display: flex;
-            flex-direction: column;
-            width: 100%;
-            align-items: center;
-
-
-            & img {
-                width: 50%;
-                height: 150px;
-                background-color: #FA8909;
-                transition: all .4s;
-                border: 10px solid transparent;
-                border-radius: 50%;
-            }
-
-            & img:hover {
-                border: 10px solid #111111;
-
-                -webkit-transform: scale(1.5);
-                transform: scale(1.5);
-
-            }
-
-            & h2 {
-                margin-top: 55px;
-                font-size: 20px;
-
-            }
-        }
+section.professor {
+    & h1 {
+        text-align: center;
     }
-}
-
-h1 {
-    margin-bottom: 2%;
 }
 
 article {
@@ -160,7 +165,6 @@ article {
 
         & iframe {
             margin: 0 0 0 15%;
-
         }
     }
 
@@ -170,10 +174,25 @@ article {
         display: flex;
         flex-wrap: nowrap;
         width: 50%;
-
     }
 }
 
-#radio1:checked~ .nav-auto .auto-btn1, #radio2:checked~ .nav-auto .auto-btn2, #radio3:checked~ .nav-auto .auto-btn3{
+#radio1:checked~.nav-auto .auto-btn1,
+#radio2:checked~.nav-auto .auto-btn2,
+#radio3:checked~.nav-auto .auto-btn3 {
     background-color: #FA8909;
+}
+
+#radio1:checked ~ .primeiro{
+    margin-left: 0%;
+
+}
+
+#radio2:checked ~ .primeiro{
+    margin-left: -25%;
+
+}
+#radio3:checked ~ .primeiro{
+    margin-left: -50%;
+
 }

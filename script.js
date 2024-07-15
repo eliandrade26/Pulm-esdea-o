@@ -1,4 +1,4 @@
-let radio = document.querySelector('.manual-btn')
+let radio = document.querySelector('.manual-btn1')
 let cont = 1
 
 document.getElementById('radio1').checked = true
