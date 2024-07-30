@@ -5,15 +5,22 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Playfair Display", serif;
-    font-weight: 400;
+    font-weight: 400px;
     font-style: normal;
+    background-color: #fba100;
 
 }
+body{
+    background-color: transparent;
+}
+
 
 header {
     margin-right: 1%;
-    margin-top: 1%;
+    margin-top: 0%;
     width: 100%;
+
+
 
     & ul {
 
@@ -21,19 +28,24 @@ header {
             display: flex;
             width: 10%;
             justify-content: flex-start;
+
         }
 
         & li {
+            height: 100%;
+
             & a {
 
                 font-family: "Playfair Display", serif;
-                margin-top: 10px;
+                margin-top: 0px;
+
             }
         }
     }
 }
 
 section.slider {
+    
     margin: 0 auto;
     width: 100%;
     height: 600px;
@@ -45,6 +57,7 @@ section.slider {
         text-align: center;
         margin-bottom: 0%;
         justify-content: center;
+       
     }
 
     & .slider-content {
@@ -56,40 +69,44 @@ section.slider {
             display: none;
         }
 
-        & .nav-manual, .nav-auto {
+        & .nav-manual,
+        .nav-auto {
             position: absolute;
             width: 100%;
             margin-top: 35%;
             display: flex;
             justify-content: center;
             gap: 10px;
+            background-color: transparent;
         }
 
-        & .nav-manual .manual-btn, .nav-auto div {
-            border: 1px solid #FA8909;
+        & .nav-manual .manual-btn,
+        .nav-auto div {
+            border: 1px solid transparent;
             cursor: pointer;
             padding: 10px;
-            border-radius: 50%;
+            border-radius: 0%;
             transition: 0.2s;
 
             &:hover {
-                background-color: #FA8909;
+                background-color: #71ea52;
             }
         }
-        & .slider-box  {
+
+        & .slider-box {
             width: 100%;
             height: 90%;
             position: relative;
             text-align: center;
             transition: 1s;
-           
-    
+
+
             & img {
                 width: 100%;
                 height: 100%;
-               
-                
-                
+
+
+
             }
         }
     }
@@ -98,6 +115,7 @@ section.slider {
 
 /* Estilização dos Estilosde luta*/
 section.content {
+    
 
     & .icon {
         width: 100%;
@@ -111,44 +129,51 @@ section.content {
                 flex-direction: column;
                 width: 50%;
                 align-items: center;
+                
 
                 & img {
-                    width: 60%;
-                    height: 150px;
-                    background-color: #faf9f7;
+                    width: 80%;
+                    height: 100%;
+                   
                     transition: all .4s;
-                    border: 10px solid transparent;
-                    border-radius: 50%;
+                    border: px solid #000;
+                    border-radius: 40%;
+                    
                 }
 
                 & img:hover {
-                    border: 10px solid #34e26e;
+                    
 
                     -webkit-transform: scale(1.5);
                     transform: scale(1.5);
                 }
-               
-                
+
+
                 & h2 {
-                    margin-top: 60px;
+                    margin: 60px 0 50% 0;
                     font-size: 30px;
                     
+
                 }
             }
         }
     }
 
     h1 {
-         margin: 2% 0 5% 0;
+        margin: 0% 0 5% 0;
         text-align: center;
+       
     }
 }
 
 section.professor {
     & h1 {
         text-align: center;
-        margin: 5% 0 5% 0;
+        margin: 0% 0 5% 0;
+        
+       
     }
+
 }
 
 article {
@@ -173,10 +198,11 @@ article {
             margin: 0 0 0 15%;
         }
     }
-   & .contact-content{
-    display: flex;
-    
-   }
+
+    & .contact-content {
+        display: flex;
+
+    }
 
     & h2 {
         font-family: "Playfair Display", serif;
@@ -189,19 +215,20 @@ article {
 #radio1:checked~.nav-auto .auto-btn1,
 #radio2:checked~.nav-auto .auto-btn2,
 #radio3:checked~.nav-auto .auto-btn3 {
-    background-color: #FA8909;
+    background-color: #71ea52;
 }
 
-#radio1:checked ~ .primeiro{
+#radio1:checked~.primeiro {
     margin-left: 0%;
 
 }
 
-#radio2:checked ~ .primeiro{
+#radio2:checked~.primeiro {
     margin-left: -120%;
 
 }
-#radio3:checked ~ .primeiro{
+
+#radio3:checked~.primeiro {
     margin-left: -200%;
 
 }
