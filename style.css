@@ -7,32 +7,39 @@
     font-family: "Oswald", serif;
     font-weight: 400px;
     font-style: normal;
-    background-color: #fba100;
+    background-color: #ffffff;
+   
 
 }
-body{
+
+body {
     background-color: transparent;
 }
 
 
 header {
-    margin-right: 1%;
-    margin-top: 0%;
-    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+   
+   
 
+    & div {
+        display: flex;
+        height: 10%;
+
+        & img {
+            width: 20%;
+        }
+    }
 
 
     & ul {
-
-        & img {
-            display: flex;
-            width: 10%;
-            
-
-        }
+        height: 5%;
+        width: 100%;
 
         & li {
-            height: 100%;
+
 
             & a {
 
@@ -45,8 +52,8 @@ header {
 }
 
 section.slider {
-    
-    margin: 0 auto;
+
+    margin: 0% auto;
     width: 100%;
     height: 600px;
     padding: 0 !important;
@@ -57,7 +64,7 @@ section.slider {
         text-align: center;
         margin-bottom: 0%;
         justify-content: center;
-       
+
     }
 
     & .slider-content {
@@ -115,7 +122,7 @@ section.slider {
 
 /* Estilização dos Estilosde luta*/
 section.content {
-    
+
 
     & .icon {
         width: 100%;
@@ -129,21 +136,21 @@ section.content {
                 flex-direction: column;
                 width: 50%;
                 align-items: center;
-                
+
 
                 & img {
                     width: 100%;
                     height: 100%;
-                   
+
                     transition: all .4s;
                     border: px solid #000;
                     border-radius: 00%;
-                    
-                    
+
+
                 }
 
                 & img:hover {
-                    
+
 
                     -webkit-transform: scale(1.1);
                     transform: scale(1.1);
@@ -153,7 +160,7 @@ section.content {
                 & h2 {
                     margin: 40px 0 60% 0;
                     font-size: 30px;
-                    
+
 
                 }
             }
@@ -163,7 +170,7 @@ section.content {
     h1 {
         margin: 0% 0 5% 0;
         text-align: center;
-       
+
     }
 }
 
@@ -171,8 +178,8 @@ section.professor {
     & h1 {
         text-align: center;
         margin: 0% 0 5% 0;
-        
-       
+
+
     }
 
 }
