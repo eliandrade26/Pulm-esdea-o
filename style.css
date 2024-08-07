@@ -1,7 +1,5 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Oswald:wght@200..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Ga+Maamli&family=Lobster&family=Oswald:wght@200..700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&display=swap');
 
 * {
     margin: 0;
@@ -11,7 +9,7 @@
     font-weight: 400px;
     font-style: normal;
     background-color: #5a5858;
-   
+
 
 }
 
@@ -24,9 +22,9 @@ header {
     position: sticky;
     top: 0;
     z-index: 1;
-   
-    
-   
+
+
+
 
     & div {
         display: flex;
@@ -41,25 +39,28 @@ header {
     & ul {
         height: 2%;
         width: 100%;
-        
+
         & li {
-            
+
 
             & a {
 
-                font-family: "", serif;
                 margin-top: 0px;
-                font-family: "Lobster", sans-serif;
+                font-family: "Oswald", sans-serif;
+                font-optical-sizing: auto;
+                font-size: 20px;
+      
             }
+
         }
     }
 }
 
 section.slider {
 
-    margin: 0% auto;
-    width: 100%;
-    height: 600px;
+    
+    width: 300%;
+    height: 500px;
     padding: 0 !important;
     overflow: hidden;
 
@@ -71,10 +72,13 @@ section.slider {
 
     }
 
+
     & .slider-content {
-        width: 200%;
+        width: 100%;
         height: 100%;
         display: flex;
+      
+       
 
         & input {
             display: none;
@@ -84,7 +88,7 @@ section.slider {
         .nav-auto {
             position: absolute;
             width: 100%;
-            margin-top: 35%;
+            margin-top: 31%;
             display: flex;
             justify-content: center;
             gap: 10px;
@@ -93,14 +97,15 @@ section.slider {
 
         & .nav-manual .manual-btn,
         .nav-auto div {
-            border: 1px solid transparent;
+            border: 1px solid #fff;
             cursor: pointer;
             padding: 10px;
-            border-radius: 0%;
+            border-radius: 10px;
             transition: 0.2s;
 
             &:hover {
                 background-color: #71ea52;
+
             }
         }
 
@@ -110,13 +115,15 @@ section.slider {
             position: relative;
             text-align: center;
             transition: 1s;
+            
 
 
             & img {
                 width: 100%;
                 height: 100%;
-
-
+                
+                object-fit: cover;
+               
 
             }
         }
@@ -139,7 +146,8 @@ section.content {
                 display: flex;
                 flex-direction: column;
                 width: 50%;
-                align-items: center; 
+                align-items: center;
+
 
 
                 & img {
@@ -148,7 +156,8 @@ section.content {
 
                     transition: all .4s;
                     border: px solid #000;
-                    border-radius: 00%;
+                    
+                    border-radius: 5px;
 
 
                 }
@@ -164,8 +173,9 @@ section.content {
                 & h2 {
                     margin: 40px 0 60% 0;
                     font-size: 30px;
-                    font-family: "Concert One", sans-serif;
-
+                    font-family: "Oswald", sans-serif;
+                font-optical-sizing: auto;
+                    color: #ddd9d9;
 
                 }
             }
@@ -175,7 +185,9 @@ section.content {
     h1 {
         margin: 0% 0 5% 0;
         text-align: center;
-        
+        color: #f6f0f0;
+        font-size: 50px;
+
 
     }
 }
@@ -184,6 +196,8 @@ section.professor {
     & h1 {
         text-align: center;
         margin: 0% 0 5% 0;
+        color: #f6f0f0;
+        font-size: 50px;
 
 
     }
@@ -199,6 +213,8 @@ article {
     & h1 {
         text-align: center;
         margin: 5% 0 5% 0;
+        color: #f6f0f0;
+        font-size: 50px;
     }
 
     & .content {
@@ -223,6 +239,7 @@ article {
         margin-left: 0%;
         flex-wrap: wrap;
         width: 95%;
+        color: #f6f0f0;
     }
 }
 
@@ -233,16 +250,17 @@ article {
 }
 
 #radio1:checked~.primeiro {
-    margin-left: 0%;
+    margin-left: 0;
 
 }
 
 #radio2:checked~.primeiro {
-    margin-left: -120%;
+    margin-left: -60%;
+
 
 }
 
 #radio3:checked~.primeiro {
-    margin-left: -200%;
+    margin-left: 0px;
 
 }
