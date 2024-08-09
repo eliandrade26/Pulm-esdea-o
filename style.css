@@ -1,15 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Oswald:wght@200..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Playfair Display", serif;
-    font-weight: 400px;
-    font-style: normal;
-    background-color: #5a5858;
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    background-color: #252323;
+    
 }
+
 
 header {
     position: sticky;
@@ -28,9 +29,9 @@ header {
     & ul {
         height: 1px;
         width: 100%;
-
+        
         & li {
-
+         
 
             & a {
 
@@ -38,7 +39,7 @@ header {
                 font-family: "Oswald", sans-serif;
                 font-optical-sizing: auto;
                 font-size: 20px;
-
+                
             }
 
         }
@@ -106,38 +107,30 @@ section.slider {
 }
 
 section.apresentacao {
+   
     & .who-we-are {
-        background-color: #5a5858;
-
+       
         & h1 {
-            color: #fff;
+            color: #dc7322;
             font-size: 100px;
             text-align: center;
+            
+            
         }
 
         & h2 {
             text-align: center;
             color: #fff;
-
-        }
-    }
-
-    & .who-are {
-        & h1 {
-            text-align: start;
-            font-size: 100px;
-            color: #fff;
-        }
-
-        & h2 {
-            text-align: justify;
+            margin: 0;
+            
+            
         }
     }
 }
 
 /* Estilização dos Estilosde luta*/
 section.content {
-
+    
 
     & .icon {
         width: 100%;
@@ -171,18 +164,28 @@ section.content {
                     font-size: 30px;
                     font-family: "Oswald", sans-serif;
                     font-optical-sizing: auto;
-                    color: #ddd9d9;
+                    color: #fff;
 
                 }
             }
         }
     }
+    & .who-are{
+        & h2{
+            text-align: center;
+            color: #fff;
+            font-size: 25px;
+            margin-top: 1%;
+        }
+       
+    }
 
     h1 {
-        margin: 0% 0 1% 0;
+        margin: 5% 0 5% 0;
         text-align: center;
-        color: #f6f0f0;
-        font-size: 50px;
+         color: #dc7322 ;
+        font-size: 100px;
+        
     }
 
     & .tabela {
@@ -202,8 +205,8 @@ section.content {
 section.professor {
     & h1 {
         text-align: center;
-        color: #f6f0f0;
-        font-size: 50px;
+        color: #dc7322 ;
+        font-size: 100px;
     }
 
 }
@@ -218,7 +221,7 @@ article {
         text-align: center;
         margin: 10% 0 5% 0;
         color: #f6f0f0;
-        font-size: 50px;
+        font-size: 40px;
     }
 
     & .content {
@@ -239,7 +242,7 @@ article {
     }
 
     & h2 {
-        font-family: "Playfair Display", serif;
+        
         margin-left: 0%;
         flex-wrap: wrap;
         width: 95%;
