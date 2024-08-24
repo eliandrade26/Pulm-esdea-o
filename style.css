@@ -82,6 +82,7 @@ section.slider {
 
         & .nav-manual .manual-btn,
         .nav-auto div {
+            display: none;
             border: 1px solid #fff;
             cursor: pointer;
             padding: 10px;
@@ -285,7 +286,7 @@ article {
 
 }
 
-@media (max-width:380px) {
+@media (max-width:640px) {
 
     header {
         & div {
