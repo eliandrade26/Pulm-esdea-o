@@ -107,7 +107,7 @@ section.slider {
     }
 }
 
-/* SOBRE */
+/* APRESENTAÇÃO SOBRE A ACADEMIA*/
 section.apresentacao {
 
     & .who-we-are {
@@ -132,9 +132,14 @@ section.apresentacao {
     }
 }
 
-/* Estilização dos Estilosde luta*/
+/* Estilização dos Estilos de luta*/
 section.content {
+    & h1 {
+        font-size: 100px;
+        color: #dc7322;
+        text-align: center;
 
+    }
 
     & .icon {
         width: 100%;
@@ -174,19 +179,31 @@ section.content {
             }
         }
     }
+}
 
-    /*Descrição das modalidades */
-    & .who-are {
-        & h2 {
-            text-align: center;
-            color: #fff;
-            font-size: 25px;
-            margin: 1%;
+/*ESTILIZAÇÃO DAS MODALIDADES*/
+& .who-are {
+    & h2 {
+        text-align: center;
+        color: #fff;
+        font-size: 25px;
+        margin: 1%;
+    }
+}
 
-        }
+/*IMAGEM DA TABELAS COM HORARIOS*/
+& .tabela {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
+    & img {
+        width: 35%;
+        background-color: transparent;
+        margin-bottom: 5%
     }
 
+    /* ESTILIZAÇÃO AULAS E HORARIOS */
     h1 {
         margin: 0% 0 3% 0;
         text-align: center;
@@ -194,30 +211,19 @@ section.content {
         font-size: 100px;
 
     }
-
-    & .tabela {
-        background-color: transparent;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-
-        & img {
-            width: 35%;
-            background-color: transparent;
-            margin-bottom: 5%
-        }
-    }
 }
 
+/*ESTILIZAÇÃO PROFESSORES*/
 section.professor {
     & h1 {
         text-align: center;
-        color: #dc7322;
+        color:#dc7322 ;
         font-size: 100px;
     }
 
 }
 
+/* ESTILIZAÇÃO DO MAPA E INFORMAÇÕES DE CONTATO*/
 article {
     display: flex;
     flex-direction: column;
@@ -227,8 +233,8 @@ article {
     & h1 {
         text-align: center;
         margin: 10% 0 5% 0;
-        color: #f6f0f0;
-        font-size: 40px;
+        color: #dc7322;
+        font-size: 70px;
     }
 
     & .content {
@@ -292,6 +298,185 @@ article {
         }
     }
 
+    section.slider {
+
+        & .slider-content {
+
+            /* ALTURA DAS BOLINHAS */
+            & .nav-manual,
+            .nav-auto {
+                width: 100%;
+                margin-top: 49%;
+            }
+
+            /* TAMANHO COR E FORMATO DAS BOLINHAS */
+            & .nav-manual .manual-btn,
+            .nav-auto div {
+                border: 1px solid #fff;
+                cursor: pointer;
+                padding: 7px;
+                border-radius: 10px;
+                transition: 0.2s;
+            }
+
+            & .slider-box {
+                width: 100%;
+                height: 100%;
+                transition: 2s;
+                text-align: center;
+
+                & img {
+                    width: 420px;
+                    height: 200px;
+                }
+            }
+        }
+
+    }
+
+    /* APRESENTAÇÃO SOBRE A ACADEMIA*/
+    section.apresentacao {
+
+        & .who-we-are {
+
+            & h1 {
+                color: #dc7322;
+                font-size: 45px;
+                text-align: center;
+            }
+
+            & h2 {
+                width: 95%;
+                text-align: center;
+                color: #fff;
+                background-color: transparent;
+                font-size: 18px;
 
 
+            }
+        }
+    }
+
+    /* Estilização dos Estilos de luta*/
+    section.content {
+        & h1 {
+            font-size: 45px;
+            color: #dc7322;
+        }
+
+        & .icon {
+            width: 100%;
+
+            & .container-icon {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                & .img-icon {
+                    display: flex;
+                    flex-direction: column;
+                    width: 50%;
+                    align-items: center;
+
+                    & img {
+                        width: 80%;
+                        height: 100%;
+                        transition: all .4s;
+                        border-radius: 5px;
+                    }
+
+                    & h2 {
+                        margin: 10px 0 20% 0;
+                        font-size: 20px;
+                        font-family: "Oswald", sans-serif;
+                        font-optical-sizing: auto;
+                        color: #fff;
+
+                    }
+                }
+            }
+        }
+    }
+
+    /*ESTILIZAÇÃO DAS MODALIDADES*/
+    & .who-are {
+        & h2 {
+            width: 95%;
+            text-align: center;
+            color: #fff;
+            font-size: 25px;
+            margin-bottom: 10%;
+
+        }
+
+    }
+
+
+    /*IMAGEM DA TABELAS COM HORARIOS*/
+    & .tabela {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        & img {
+
+            width: 70%;
+            margin-bottom: 5%
+        }
+
+        /* ESTILIZAÇÃO AULAS E HORARIOS */
+        h1 {
+            margin: 0% 0 10% 0;
+            text-align: center;
+            color: #dc7322;
+            font-size: 50px;
+
+        }
+    }
+
+    /*ESTILIZAÇÃO PROFESSORES*/
+    section.professor {
+        & h1 {
+            text-align: center;
+            font-size: 45px;
+        }
+
+    }
+
+    /* ESTILIZAÇÃO DO MAPA E INFORMAÇÕES DE CONTATO*/
+    article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        & h1 {
+            text-align: center;
+            margin: 10% 0 5% 0;
+            color: ;
+            font-size: 45px;
+        }
+
+        & .content {
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            
+            & iframe {
+                margin: 0 0 0 0;
+                width: 100%;  
+            }
+        }
+
+        & .contact-content {
+            display: flex;
+        }
+        & h2 {
+            width: 100%;
+            color: #f6f0f0;
+            font-size: 18px;
+        }
+    }
 }
