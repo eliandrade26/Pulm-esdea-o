@@ -532,7 +532,7 @@ article {
     }
 }
 
-    @media (max-width:400px) {
+    @media (max-width:450px) {
         section.slider {
     
             & .slider-content {
@@ -543,7 +543,7 @@ article {
                     text-align: center;
     
                     & img {
-                        width: 400px;
+                        width: 420px;
                         height: 200px;
                     }
                 }
